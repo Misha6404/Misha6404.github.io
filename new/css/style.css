@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1, 6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: bonder-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+    border: 0;
+    color: khaki;
+}
+
+
+/*ЧАСТЬ 1*/
+
+
+/* container */
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/intro.jpg) center no-repeat;
+    -webkit-beckgraund-size: cover;
+    background-size: cover;
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 top;
+    text-align: center;
+}
+
+.intro_title {
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: orangered;
+}
+
+.intro_suptitle {
+    margin-bottom: 25px;
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/* header */
+
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: orangered;
+}
+
+
+/* nav */
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_linck {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    color: white;
+    text-decoration: nome;
+    transition: color 0.1s linear;
+}
+
+.nav_linck:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+
+.nav_linck:hover {
+    color: orange;
+}
+
+.nav_linck:hover::after {
+    opacity: 1;
+}
+
+
+/* Botton */
+
+.btn {
+    margin: 50px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    border: 2px solid olivedrab;
+    font-size: 14px;
+    font-weight: 700;
+    color: yellow;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: olivedrab;
+    color: yellow;
+}
+
+
+/* Slider */
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.slider_item {
+    width: 24%;
+    padding: 20px 0;
+    position: relative;
+    border-top: 4px solid white;
+    opacity: 0.7;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.slider_num {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/*ЧАСТЬ 2*/
+
+
+/* section */
+
+.section {
+    padding: 80px 0;
+}
+
+.section_header {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 950px;
+    margin-bottom: 0 auto 40px;
+    text-align: center;
+}
+
+.section_suptitle {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.section_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    background-color: orangered;
+}
+
+.section_text {
+    font-size: 15px;
+    color: #999;
+}
+
+
+/* About */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_item {
+    width: 240px;
+    background-color: cyan;
+}
+
+.about_item:hover .about_img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about_item:hover .about_img img {
+    opacity: .1;
+}
+
+.about_img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.about_img img {
+    transition: opacity .1s linear;
+}
+
+
+/* Statistics */
+
+.statistics {
+    background-color: cyan;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat_item {
+    flex: 1 1 0;
+    padding: 70px 25px;
+    border-left: 1px solid white;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.stat_item:last-child {
+    border-right: 1px solid white;
+}
+
+.stat_cound {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat_text {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/* Servise */
+
+.services {
+    display: flex;
+}
+
+.services_item {
+    flex: 1 1 0;
+    padding-left: 70px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.services_icon {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    z-index: 1;
+}
+
+.services_title {
+    margin-bottom: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.services_text {
+    font-size: 8 px;
+    color: #999;
+}
