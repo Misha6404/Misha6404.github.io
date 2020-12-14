@@ -209,6 +209,10 @@ hr {
     padding: 80px 0;
 }
 
+.section--gray {
+    background-color: #f8f8f8;
+}
+
 .section_header {
     margin-bottom: 40px;
     width: 100%;
@@ -340,4 +344,126 @@ hr {
 .services_text {
     font-size: 8 px;
     color: #999;
+}
+
+
+/* Devices */
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* We Do */
+
+.wedo {
+    display: flex;
+}
+
+.wedo_item {
+    width: 50%;
+}
+
+
+/* Accordion */
+
+.accordion_item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.accordion_item.active .accordion_content {
+    display: block;
+}
+
+.accordion_item.active .accordion_header:after {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion_header {
+    border-bottom: 1px solid #999;
+    position: relative;
+    padding: 15px 20px 15px 65px;
+    cursor: pointer;
+}
+
+.accordion_header:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion_icon {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    z-index: 1;
+    transform: translateY(-20%);
+}
+
+.accordion_content {
+    display: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+}
+
+.accordion_title {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+/* Reviews */
+
+.reviews {
+    padding: 0 110px;
+}
+
+.reviews_item {
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews_photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews_text {
+    font-size: 24px;
+    color: #999;
+    width: 300;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.reviews_autor {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: #333;
+}
+
+.reviews_autor:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 10px;
+    background-color: orangered;
 }
