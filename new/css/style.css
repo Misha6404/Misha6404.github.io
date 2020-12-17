@@ -467,3 +467,56 @@ hr {
     margin-right: 10px;
     background-color: orangered;
 }
+
+
+/* Card */
+
+.card_item {
+    width: 310px;
+    height: 455px;
+    background-color: cyan;
+}
+
+.card_img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.card_img img {
+    transition: opacity .1s linear;
+}
+
+.card_item:hover .card_img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card_item:hover .card_img img {
+    opacity: .1;
+}
+
+.card_info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card_name {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card_prof {
+    font-size: 15px;
+    color: #999;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/* Logos */
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
