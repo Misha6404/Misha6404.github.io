@@ -602,7 +602,8 @@ hr {
 .clients_item{
     width: 50%;
     padding: 0 45px 0 175px;
-    position: relative;
+    position:relative;
+    margin-top: 40px;
 }
 .clients_photo{
     width: 110px;
